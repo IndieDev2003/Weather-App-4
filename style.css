@@ -16,6 +16,7 @@ html,body{
     height:100%;
     width:100%;
     background-image: url(https://i.pinimg.com/originals/48/cb/95/48cb95ed08378267f540f8e4a70a8a3a.jpg);
+    background-image: url(night.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -32,7 +33,7 @@ html,body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     overflow: hidden;
     background-image: url(night.png);
     background-position: center;
@@ -45,18 +46,38 @@ html,body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:5px;
     color:white;
     font-weight:550;
 }
-.up i,p{
-    font-size:1.6rem; 
-    text-shadow: 0px 0px 20px black;
+.up i{
+    font-size:1.7rem; 
+    text-shadow: 2px 2px 0px black;
 
 }
+.center{
+    height:100px;
+    width:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 2px black;
+}
+.center h1{
+    font-size: 2.2rem;
+}
+input{
+    max-width:180px;
+    color:black;
+    padding:5px;
+    border-radius: 6px;
+    background-color: rgba(220, 220, 220, 0.548);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-weight: 500;
+}
 .ri-search-line{
-    /* height:1px; */
-    /* width:1px; */
+ 
     background-color: rgb(231, 123, 34);
     padding: 5px 15px;
     border-radius:25px;

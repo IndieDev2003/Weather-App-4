@@ -40,14 +40,16 @@ const indicaters={
     temp:document.querySelector("#temp"),
     windSpeed:document.querySelector("#wind-speed"),
     humidity:document.querySelector("#humidity"),
-    condition:document.querySelector("#condition")
+    condition:document.querySelector("#condition"),
+    cityName:document.querySelector("#city")
 }
 
 weatherCard.style.backgroundImage= `url(${theme.day})`
 
 
-async function Weather(city){
-    city="Phillaur"
+async function Weather(){
+    // city="Phillaur"
+    let city=SetCity();
     const respnose = await fetch(apiCred.apiUrl+city+'&units=metric'+'&appid='+apiCred.apiKey)
     const res=await respnose.json()
 
@@ -55,13 +57,27 @@ async function Weather(city){
     indicaters.windSpeed.innerHTML=res.wind.speed +'km/h'
     indicaters.humidity.innerHTML=res.main.humidity+'% '
     indicaters.condition.innerHTML=res.weather[0].main
+    indicaters.cityName.innerHTML=res.name
+
     console.log(res)
     city=''
 }
 
 function SetCity(){
-    console.log(document.querySelector("#city-name").innerHTML)
-    return(document.querySelector("#city-name").innerHTML)
+    console.log(document.querySelector("#city-name").value)
+    return(document.querySelector("#city-name").value)
 }
-Weather(SetCity());
+// Weather(SetCity());
 
+// document.querySelector("#city-name").addEventListener("focus", handlePlaceholder);
+// document.querySelector("#city-name").addEventListener("blur", handlePlaceholder);
+// function handlePlaceholder() {
+//     if (document.querySelector("#city-name").innerHTML === "" || document.querySelector("#city-name").innerHTML === "<br>") {
+//         document.querySelector("#city-name") = "";
+//         document.querySelector("#city-name").setAttribute("data-placeholder", "type here");
+//     } else {
+//         document.querySelector("#city-name").removeAttribute("data-placeholder");
+//     }
+// }
+
+// handlePlaceholder();
