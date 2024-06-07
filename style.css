@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color:white;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+.main{
+    height:100%;
+    width:100%;
+    background-image: url(https://i.pinimg.com/originals/48/cb/95/48cb95ed08378267f540f8e4a70a8a3a.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-card{
+    height: 520px;
+    width:300px;
+    background-color: rgb(28, 44, 58);
+    border-radius:15px;
+    box-shadow:5px 5px 4px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: url(night.png);
+    background-position: center;
+    background-size: cover;
+}
+.up{
+    height: 100px;
+    width:200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color:white;
+    font-weight:550;
+}
+.up i,p{
+    font-size:1.6rem; 
+    text-shadow: 0px 0px 20px black;
+
+}
+.ri-search-line{
+    /* height:1px; */
+    /* width:1px; */
+    background-color: rgb(231, 123, 34);
+    padding: 5px 15px;
+    border-radius:25px;
+}
+
+#city-name{
+    border:none;
+    outline:none;
+}
+.bottom{
+    flex:2;
+    width: inherit;
+    padding:35px 50px;
+    display: flex;
+    align-items: flex-end;
+    gap:10px;
+}
+.btm-left{
+    height: 150px;
+    display: flex;
+    width: 190px;
+    align-items: end;
+    justify-content: center;
+}
+.btm-left h2{
+    font-size:3rem;
+    text-align: left;
+    text-shadow: 0px 0px 10px black;
+
+    
+}
+.btm-right{
+    text-align: center;
+    padding:0px 0px 15px 0px;
+}
+
+.btm-right i{
+    font-size:3rem;
+    text-shadow: 0px 0px 10px black;
+}
+.etc-info{
+    display: flex;
+    gap:3px;
+}
+.etc-info h3{
+    font-size: .7rem;
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px black;
+}

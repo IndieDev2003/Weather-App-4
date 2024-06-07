@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - Gagan Suman</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="main">
+        <div class="weather-card">
+            <div class="up">
+                <i class="ri-map-pin-2-line"></i>
+                <p contenteditable="true" id="city-name"></p>
+                <i class="ri-search-line" onclick="Weather()"></i>
+                            
+            </div>
+            <div class="bottom">
+                <div class="btm-left">
+                    <h2 id="temp">32</h2>
+
+                </div>
+                <div class="btm-right">
+                    <i class="ri-sun-line"></i>
+                    <h2 id="condition">Sunny</h2>
+                    <div class="etc-info">
+                        <h3 id="humidity">35%</h3>
+                        <h3 id="wind-speed">45kmph</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="weather4.js"></script>
+</body>
+</html>
